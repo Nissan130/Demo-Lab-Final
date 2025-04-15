@@ -1,0 +1,17 @@
+cd AdapterExample
+mkdir -p build && cd build
+cmake ..
+make
+ctest
+
+
+AdapterExample/
+├── CMakeLists.txt
+├── build/                   # (generated after build)
+├── src/                     # source files
+│   ├── OldPrinter.h
+│   ├── NewPrinterInterface.h
+│   └── PrinterAdapter.h
+├── tests/                   # test files
+│   └── PrinterAdapterTest.cpp
+
