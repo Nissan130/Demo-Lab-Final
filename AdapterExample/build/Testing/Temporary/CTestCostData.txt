@@ -1,0 +1,2 @@
+PrinterAdapterTest.AdapterPrintsUsingOldPrinter 1 0.0057967
+---
