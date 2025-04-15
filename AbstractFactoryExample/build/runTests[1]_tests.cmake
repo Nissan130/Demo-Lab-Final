@@ -1,0 +1,5 @@
+add_test([=[AbstractFactoryTest.CreatesWindowsComponents]=]  /home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build/runTests [==[--gtest_filter=AbstractFactoryTest.CreatesWindowsComponents]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AbstractFactoryTest.CreatesWindowsComponents]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[AbstractFactoryTest.CreatesMacComponents]=]  /home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build/runTests [==[--gtest_filter=AbstractFactoryTest.CreatesMacComponents]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AbstractFactoryTest.CreatesMacComponents]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  runTests_TESTS AbstractFactoryTest.CreatesWindowsComponents AbstractFactoryTest.CreatesMacComponents)

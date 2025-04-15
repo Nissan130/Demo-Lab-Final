@@ -1,0 +1,4 @@
+ShapeFactoryTest.CreatesCircle 1 0.00505226
+ShapeFactoryTest.CreatesSquare 1 0.00666279
+ShapeFactoryTest.ReturnsNullOnUnknownType 1 0.00331822
+---

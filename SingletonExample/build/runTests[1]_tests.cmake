@@ -1,0 +1,5 @@
+add_test([=[SingletonTest.LoggerStoresLog]=]  /home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build/runTests [==[--gtest_filter=SingletonTest.LoggerStoresLog]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[SingletonTest.LoggerStoresLog]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[SingletonTest.LoggerIsSingleton]=]  /home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build/runTests [==[--gtest_filter=SingletonTest.LoggerIsSingleton]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[SingletonTest.LoggerIsSingleton]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  runTests_TESTS SingletonTest.LoggerStoresLog SingletonTest.LoggerIsSingleton)

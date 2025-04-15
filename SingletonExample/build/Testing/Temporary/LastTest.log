@@ -1,0 +1,57 @@
+Start testing: Apr 15 13:57 +06
+----------------------------------------------------------
+1/2 Testing: SingletonTest.LoggerStoresLog
+1/2 Test: SingletonTest.LoggerStoresLog
+Command: "/home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build/runTests" "--gtest_filter=SingletonTest.LoggerStoresLog" "--gtest_also_run_disabled_tests"
+Directory: /home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build
+"SingletonTest.LoggerStoresLog" start time: Apr 15 13:57 +06
+Output:
+----------------------------------------------------------
+Running main() from /home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SingletonTest.LoggerStoresLog
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SingletonTest
+[ RUN      ] SingletonTest.LoggerStoresLog
+[       OK ] SingletonTest.LoggerStoresLog (0 ms)
+[----------] 1 test from SingletonTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SingletonTest.LoggerStoresLog" end time: Apr 15 13:57 +06
+"SingletonTest.LoggerStoresLog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: SingletonTest.LoggerIsSingleton
+2/2 Test: SingletonTest.LoggerIsSingleton
+Command: "/home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build/runTests" "--gtest_filter=SingletonTest.LoggerIsSingleton" "--gtest_also_run_disabled_tests"
+Directory: /home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build
+"SingletonTest.LoggerIsSingleton" start time: Apr 15 13:57 +06
+Output:
+----------------------------------------------------------
+Running main() from /home/md-nissan-ali/Demo-Lab-Final/SingletonExample/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SingletonTest.LoggerIsSingleton
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SingletonTest
+[ RUN      ] SingletonTest.LoggerIsSingleton
+[       OK ] SingletonTest.LoggerIsSingleton (0 ms)
+[----------] 1 test from SingletonTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SingletonTest.LoggerIsSingleton" end time: Apr 15 13:57 +06
+"SingletonTest.LoggerIsSingleton" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 15 13:57 +06

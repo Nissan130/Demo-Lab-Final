@@ -21,3 +21,4 @@ TEST(PrinterAdapterTest, AdapterPrintsUsingOldPrinter) {
 
     EXPECT_EQ(buffer.str(), "Printing using OldPrinter\n");
 }
+

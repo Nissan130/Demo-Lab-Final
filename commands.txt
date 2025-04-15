@@ -1,0 +1,194 @@
+cd AdapterExample
+mkdir -p build && cd build
+cmake ..
+make
+ctest       # or ./runTests to see test output
+
+
+AdapterExample/
+├── CMakeLists.txt
+├── build/                   # (generated after build)
+├── src/                     # source files
+│   ├── OldPrinter.h
+│   ├── NewPrinterInterface.h
+│   └── PrinterAdapter.h
+├── tests/                   # test files
+│   └── PrinterAdapterTest.cpp
+
+
+
+To implement any design pattern in C++ using **Google Test** (gtest) and **CMake** on Ubuntu, follow these **step-by-step instructions**:
+
+---
+
+### **Step 1: Set Up the Project Structure**
+
+1. **Create a new project directory**:
+   ```bash
+   mkdir DesignPatternExample
+   cd DesignPatternExample
+   ```
+
+2. **Create subdirectories for source code (`src/`) and tests (`tests/`)**:
+   ```bash
+   mkdir src tests build
+   ```
+
+---
+
+### **Step 2: Add Your C++ Files**
+
+1. **Implement the design pattern in the `src/` folder**:
+   - **Create header files** for classes involved in the pattern (e.g., `MyClass.h`, `AdapterPattern.h`).
+   - **Optionally, create `.cpp` files** if needed (e.g., `MyClass.cpp`).
+
+   Example:
+   - `src/DesignPattern.h` (Pattern implementation)
+   - `src/DesignPattern.cpp` (Implementation of logic)
+
+2. **Write your test cases in the `tests/` folder**:
+   - Use **Google Test (gtest)** framework for writing unit tests (e.g., `tests/DesignPatternTest.cpp`).
+
+---
+
+### **Step 3: Install Dependencies on Ubuntu**
+
+1. **Install g++ (C++ compiler)** if not already installed:
+   ```bash
+   sudo apt update
+   sudo apt install build-essential
+   ```
+
+2. **Install CMake** if not already installed:
+   ```bash
+   sudo apt install cmake
+   ```
+
+3. **Install Google Test**:
+   - You can either **fetch** Google Test using CMake, or install it system-wide.
+   
+   To **fetch** Google Test using CMake (recommended):
+   ```bash
+   sudo apt-get install cmake-curses-gui
+   ```
+
+---
+
+### **Step 4: Create the `CMakeLists.txt` File**
+
+1. **Set the C++ Standard** and **Include Google Test** using FetchContent.
+2. **Link your source code and tests** properly in `CMakeLists.txt`.
+
+Example:
+```cmake
+cmake_minimum_required(VERSION 3.10)
+project(DesignPatternExample)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# GoogleTest
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/refs/tags/release-1.12.1.zip
+)
+FetchContent_MakeAvailable(googletest)
+
+enable_testing()
+
+# Source files (add the .cpp files if any)
+add_library(pattern_lib src/DesignPattern.h src/DesignPattern.cpp)
+
+# Test
+add_executable(runTests tests/DesignPatternTest.cpp)
+target_link_libraries(runTests pattern_lib gtest gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(runTests)
+```
+
+---
+
+### **Step 5: Write Google Test Cases**
+
+1. Write **unit tests** using Google Test in `tests/` directory.
+
+Example:
+```cpp
+#include "gtest/gtest.h"
+#include "../src/DesignPattern.h"
+
+TEST(DesignPatternTest, TestPatternBehavior) {
+    DesignPatternClass obj;
+    EXPECT_EQ(obj.methodToTest(), expected_value);
+}
+```
+
+---
+
+### **Step 6: Build and Run Tests with CMake**
+
+1. **Create a build directory**:
+   ```bash
+   mkdir build && cd build
+   ```
+
+2. **Generate Makefiles with CMake**:
+   ```bash
+   cmake ..
+   ```
+
+3. **Build the project**:
+   ```bash
+   make
+   ```
+
+4. **Run the tests**:
+   ```bash
+   ctest   # or ./runTests
+   ```
+
+---
+
+### **Step 7: Clean Up (Optional)**
+
+1. **Clean build files** if needed:
+   ```bash
+   make clean
+   ```
+
+---
+
+### **Step 8: (Optional) Version Control (Git)**
+
+1. **Initialize a Git repository**:
+   ```bash
+   git init
+   ```
+
+2. **Create a `.gitignore` file** to avoid committing build artifacts:
+   ```bash
+   echo "build/" > .gitignore
+   ```
+
+3. **Commit the code**:
+   ```bash
+   git add .
+   git commit -m "Initial commit with design pattern implementation"
+   ```
+
+---
+
+### **Summary of Steps**
+
+1. **Set up project structure**: `src/`, `tests/`, `build/`
+2. **Write the C++ code for the design pattern**: Header and Source files
+3. **Install dependencies**: Google Test, CMake
+4. **Create `CMakeLists.txt`** to configure the project and tests
+5. **Write unit tests** using Google Test
+6. **Build and run the tests** using CMake
+7. **Clean up and version control** if necessary
+
+---
+
+This is a general template for **any C++ design pattern** that you want to implement and test using Google Test and CMake in Ubuntu.

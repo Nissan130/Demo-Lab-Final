@@ -1,0 +1,4 @@
+CompositeTest.SingleCircle 1 0.00317781
+CompositeTest.CompositeWithCircles 1 0.00475791
+CompositeTest.NestedComposites 1 0.00425764
+---

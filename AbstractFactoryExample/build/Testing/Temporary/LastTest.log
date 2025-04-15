@@ -1,0 +1,57 @@
+Start testing: Apr 15 13:01 +06
+----------------------------------------------------------
+1/2 Testing: AbstractFactoryTest.CreatesWindowsComponents
+1/2 Test: AbstractFactoryTest.CreatesWindowsComponents
+Command: "/home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build/runTests" "--gtest_filter=AbstractFactoryTest.CreatesWindowsComponents" "--gtest_also_run_disabled_tests"
+Directory: /home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build
+"AbstractFactoryTest.CreatesWindowsComponents" start time: Apr 15 13:01 +06
+Output:
+----------------------------------------------------------
+Running main() from /home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AbstractFactoryTest.CreatesWindowsComponents
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AbstractFactoryTest
+[ RUN      ] AbstractFactoryTest.CreatesWindowsComponents
+[       OK ] AbstractFactoryTest.CreatesWindowsComponents (0 ms)
+[----------] 1 test from AbstractFactoryTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AbstractFactoryTest.CreatesWindowsComponents" end time: Apr 15 13:01 +06
+"AbstractFactoryTest.CreatesWindowsComponents" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: AbstractFactoryTest.CreatesMacComponents
+2/2 Test: AbstractFactoryTest.CreatesMacComponents
+Command: "/home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build/runTests" "--gtest_filter=AbstractFactoryTest.CreatesMacComponents" "--gtest_also_run_disabled_tests"
+Directory: /home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build
+"AbstractFactoryTest.CreatesMacComponents" start time: Apr 15 13:01 +06
+Output:
+----------------------------------------------------------
+Running main() from /home/md-nissan-ali/Demo-Lab-Final/AbstractFactoryExample/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AbstractFactoryTest.CreatesMacComponents
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AbstractFactoryTest
+[ RUN      ] AbstractFactoryTest.CreatesMacComponents
+[       OK ] AbstractFactoryTest.CreatesMacComponents (0 ms)
+[----------] 1 test from AbstractFactoryTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AbstractFactoryTest.CreatesMacComponents" end time: Apr 15 13:01 +06
+"AbstractFactoryTest.CreatesMacComponents" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 15 13:01 +06

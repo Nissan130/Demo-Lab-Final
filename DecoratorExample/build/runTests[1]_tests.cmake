@@ -1,0 +1,7 @@
+add_test([=[DecoratorTest.SimpleCoffee]=]  /home/md-nissan-ali/Demo-Lab-Final/DecoratorExample/build/runTests [==[--gtest_filter=DecoratorTest.SimpleCoffee]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DecoratorTest.SimpleCoffee]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/DecoratorExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[DecoratorTest.CoffeeWithMilk]=]  /home/md-nissan-ali/Demo-Lab-Final/DecoratorExample/build/runTests [==[--gtest_filter=DecoratorTest.CoffeeWithMilk]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DecoratorTest.CoffeeWithMilk]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/DecoratorExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[DecoratorTest.CoffeeWithMilkAndSugar]=]  /home/md-nissan-ali/Demo-Lab-Final/DecoratorExample/build/runTests [==[--gtest_filter=DecoratorTest.CoffeeWithMilkAndSugar]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DecoratorTest.CoffeeWithMilkAndSugar]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/DecoratorExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  runTests_TESTS DecoratorTest.SimpleCoffee DecoratorTest.CoffeeWithMilk DecoratorTest.CoffeeWithMilkAndSugar)

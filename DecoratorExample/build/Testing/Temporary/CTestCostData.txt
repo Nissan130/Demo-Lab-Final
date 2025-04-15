@@ -1,0 +1,4 @@
+DecoratorTest.SimpleCoffee 1 0.00397177
+DecoratorTest.CoffeeWithMilk 1 0.00310656
+DecoratorTest.CoffeeWithMilkAndSugar 1 0.00352115
+---

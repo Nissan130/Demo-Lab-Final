@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/runTests.dir/tests/LoggerTest.cpp.o -o runTests  liblogger_lib.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a 

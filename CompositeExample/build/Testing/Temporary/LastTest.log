@@ -1,0 +1,84 @@
+Start testing: Apr 15 13:09 +06
+----------------------------------------------------------
+1/3 Testing: CompositeTest.SingleCircle
+1/3 Test: CompositeTest.SingleCircle
+Command: "/home/md-nissan-ali/Demo-Lab-Final/CompositeExample/build/runTests" "--gtest_filter=CompositeTest.SingleCircle" "--gtest_also_run_disabled_tests"
+Directory: /home/md-nissan-ali/Demo-Lab-Final/CompositeExample/build
+"CompositeTest.SingleCircle" start time: Apr 15 13:09 +06
+Output:
+----------------------------------------------------------
+Running main() from /home/md-nissan-ali/Demo-Lab-Final/CompositeExample/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CompositeTest.SingleCircle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CompositeTest
+[ RUN      ] CompositeTest.SingleCircle
+[       OK ] CompositeTest.SingleCircle (0 ms)
+[----------] 1 test from CompositeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CompositeTest.SingleCircle" end time: Apr 15 13:09 +06
+"CompositeTest.SingleCircle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: CompositeTest.CompositeWithCircles
+2/3 Test: CompositeTest.CompositeWithCircles
+Command: "/home/md-nissan-ali/Demo-Lab-Final/CompositeExample/build/runTests" "--gtest_filter=CompositeTest.CompositeWithCircles" "--gtest_also_run_disabled_tests"
+Directory: /home/md-nissan-ali/Demo-Lab-Final/CompositeExample/build
+"CompositeTest.CompositeWithCircles" start time: Apr 15 13:09 +06
+Output:
+----------------------------------------------------------
+Running main() from /home/md-nissan-ali/Demo-Lab-Final/CompositeExample/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CompositeTest.CompositeWithCircles
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CompositeTest
+[ RUN      ] CompositeTest.CompositeWithCircles
+[       OK ] CompositeTest.CompositeWithCircles (0 ms)
+[----------] 1 test from CompositeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CompositeTest.CompositeWithCircles" end time: Apr 15 13:09 +06
+"CompositeTest.CompositeWithCircles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: CompositeTest.NestedComposites
+3/3 Test: CompositeTest.NestedComposites
+Command: "/home/md-nissan-ali/Demo-Lab-Final/CompositeExample/build/runTests" "--gtest_filter=CompositeTest.NestedComposites" "--gtest_also_run_disabled_tests"
+Directory: /home/md-nissan-ali/Demo-Lab-Final/CompositeExample/build
+"CompositeTest.NestedComposites" start time: Apr 15 13:09 +06
+Output:
+----------------------------------------------------------
+Running main() from /home/md-nissan-ali/Demo-Lab-Final/CompositeExample/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CompositeTest.NestedComposites
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CompositeTest
+[ RUN      ] CompositeTest.NestedComposites
+[       OK ] CompositeTest.NestedComposites (0 ms)
+[----------] 1 test from CompositeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CompositeTest.NestedComposites" end time: Apr 15 13:09 +06
+"CompositeTest.NestedComposites" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 15 13:09 +06

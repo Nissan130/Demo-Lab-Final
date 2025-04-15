@@ -1,0 +1,7 @@
+add_test([=[ShapeFactoryTest.CreatesCircle]=]  /home/md-nissan-ali/Demo-Lab-Final/FactoryMethodExample/build/runTests [==[--gtest_filter=ShapeFactoryTest.CreatesCircle]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ShapeFactoryTest.CreatesCircle]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/FactoryMethodExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[ShapeFactoryTest.CreatesSquare]=]  /home/md-nissan-ali/Demo-Lab-Final/FactoryMethodExample/build/runTests [==[--gtest_filter=ShapeFactoryTest.CreatesSquare]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ShapeFactoryTest.CreatesSquare]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/FactoryMethodExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[ShapeFactoryTest.ReturnsNullOnUnknownType]=]  /home/md-nissan-ali/Demo-Lab-Final/FactoryMethodExample/build/runTests [==[--gtest_filter=ShapeFactoryTest.ReturnsNullOnUnknownType]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ShapeFactoryTest.ReturnsNullOnUnknownType]=]  PROPERTIES WORKING_DIRECTORY /home/md-nissan-ali/Demo-Lab-Final/FactoryMethodExample/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  runTests_TESTS ShapeFactoryTest.CreatesCircle ShapeFactoryTest.CreatesSquare ShapeFactoryTest.ReturnsNullOnUnknownType)
